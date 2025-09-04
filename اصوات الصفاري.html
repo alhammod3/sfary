@@ -1,0 +1,2754 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>جدول أصوات الصفاري</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Tajawal', system-ui, sans-serif; direction: rtl; text-align: right; margin: 0; padding: 24px; background: #f8fafc; color: #0f172a; }
+  h1 { margin: 0 0 14px; font-weight: 700; }
+  .toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
+  .search-input { flex: 1; font: inherit; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 10px; outline: none; }
+  .muted { color: #64748b; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 16px rgba(2,6,23,0.06); }
+  thead th { background: #0ea5e9; color: #fff; font-weight: 600; padding: 12px 16px; }
+  tbody td { padding: 10px 14px; border-bottom: 1px solid #e2e8f0; vertical-align: middle; }
+  tbody tr:hover { background: #f1f5f9; }
+  .cat-link { color: #0ea5e9; text-decoration: none; font-weight: 600; }
+  .cat-link:hover { text-decoration: underline; }
+  /* Word colors */
+  .clr-warn { color: #ef4444; font-weight: 700; }  /* إنذار */
+  .clr-sing { color: #16a34a; font-weight: 700; }  /* تغريد */
+  .clr-call { color: #2563eb; font-weight: 700; }  /* نداء */
+  .clr-song { color: #7c3aed; font-weight: 700; }  /* تغريد */
+</style>
+</head>
+<body>
+  <h1>جدول أصوات الصفاري</h1>
+  <p>انقر على رقم الكتالوج للانتقال مباشرة إلى صفحة التسجيل في <a href="https://xeno-canto.org">xeno-canto.org</a>.</p>
+
+  <div class="toolbar">
+    <input class="search-input" type="search" placeholder="ابحث في الجدول..." oninput="filterTable(this.value)">
+    <span class="muted">عدد الصفوف: <span id="rowCount">521</span></span>
+  </div>
+
+  <table id="dataTable">
+    <thead>
+      <tr><th>رقم الكتالوج</th><th>نوع الصوت (عربي)</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/959335" class="cat-link">959335</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/660762" class="cat-link">660762</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/959285" class="cat-link">959285</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/959255" class="cat-link">959255</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/932700" class="cat-link">932700</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/932699" class="cat-link">932699</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/745556" class="cat-link">745556</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/719341" class="cat-link">719341</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/509050" class="cat-link">509050</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/425401" class="cat-link">425401</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/398167" class="cat-link">398167</a></td>
+        <td class="songtype-cell">نداء، تغريد، نداء and تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/398166" class="cat-link">398166</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/389739" class="cat-link">389739</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/363078" class="cat-link">363078</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/349877" class="cat-link">349877</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/339329" class="cat-link">339329</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/298688" class="cat-link">298688</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/125135" class="cat-link">125135</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/91695" class="cat-link">91695</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/440291" class="cat-link">440291</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/349873" class="cat-link">349873</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/213616" class="cat-link">213616</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/125136" class="cat-link">125136</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/60153" class="cat-link">60153</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1004400" class="cat-link">1004400</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/808777" class="cat-link">808777</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/547568" class="cat-link">547568</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/385501" class="cat-link">385501</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/201337" class="cat-link">201337</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/195087" class="cat-link">195087</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/193184" class="cat-link">193184</a></td>
+        <td class="songtype-cell">نداء، a نداء very differnent from the regullar oriole call.</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/185493" class="cat-link">185493</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/167800" class="cat-link">167800</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1030705" class="cat-link">1030705</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/813549" class="cat-link">813549</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/786584" class="cat-link">786584</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/755734" class="cat-link">755734</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/742110" class="cat-link">742110</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/736438" class="cat-link">736438</a></td>
+        <td class="songtype-cell">تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/733455" class="cat-link">733455</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692989" class="cat-link">692989</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/573900" class="cat-link">573900</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/543894" class="cat-link">543894</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/494861" class="cat-link">494861</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/491072" class="cat-link">491072</a></td>
+        <td class="songtype-cell">نداء استجداء، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/473494" class="cat-link">473494</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/464133" class="cat-link">464133</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/417592" class="cat-link">417592</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/385583" class="cat-link">385583</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/385582" class="cat-link">385582</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/369376" class="cat-link">369376</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/289669" class="cat-link">289669</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/283191" class="cat-link">283191</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/246696" class="cat-link">246696</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/188484" class="cat-link">188484</a></td>
+        <td class="songtype-cell">نداء، تغريد، electric water motor pump</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/180042" class="cat-link">180042</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/155375" class="cat-link">155375</a></td>
+        <td class="songtype-cell">نداء استجداء، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/116741" class="cat-link">116741</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/22704" class="cat-link">22704</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/22703" class="cat-link">22703</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/755735" class="cat-link">755735</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/540833" class="cat-link">540833</a></td>
+        <td class="songtype-cell">تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/337338" class="cat-link">337338</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/183195" class="cat-link">183195</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/404369" class="cat-link">404369</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1032791" class="cat-link">1032791</a></td>
+        <td class="songtype-cell">نداء، short calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1025655" class="cat-link">1025655</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1019176" class="cat-link">1019176</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1019175" class="cat-link">1019175</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1019157" class="cat-link">1019157</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1019140" class="cat-link">1019140</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1018271" class="cat-link">1018271</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1017966" class="cat-link">1017966</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1012172" class="cat-link">1012172</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1009755" class="cat-link">1009755</a></td>
+        <td class="songtype-cell">نداء، نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1005473" class="cat-link">1005473</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/999661" class="cat-link">999661</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/996930" class="cat-link">996930</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/976261" class="cat-link">976261</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/913234" class="cat-link">913234</a></td>
+        <td class="songtype-cell">نداء طيران، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/904551" class="cat-link">904551</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/858569" class="cat-link">858569</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/858568" class="cat-link">858568</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/825480" class="cat-link">825480</a></td>
+        <td class="songtype-cell">نداء استجداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819823" class="cat-link">819823</a></td>
+        <td class="songtype-cell">نداء، contact calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819479" class="cat-link">819479</a></td>
+        <td class="songtype-cell">uncertain، might be a juvenile contact or begging نداء ?</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819453" class="cat-link">819453</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819404" class="cat-link">819404</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819243" class="cat-link">819243</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/819202" class="cat-link">819202</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/818688" class="cat-link">818688</a></td>
+        <td class="songtype-cell">نداء، contact calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/818377" class="cat-link">818377</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/816820" class="cat-link">816820</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/816784" class="cat-link">816784</a></td>
+        <td class="songtype-cell">نداء تواصل</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/813936" class="cat-link">813936</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/812118" class="cat-link">812118</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/809572" class="cat-link">809572</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/804052" class="cat-link">804052</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/801008" class="cat-link">801008</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/798513" class="cat-link">798513</a></td>
+        <td class="songtype-cell">تغريد، interaction calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/790082" class="cat-link">790082</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/788678" class="cat-link">788678</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/782536" class="cat-link">782536</a></td>
+        <td class="songtype-cell">تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/744100" class="cat-link">744100</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741509" class="cat-link">741509</a></td>
+        <td class="songtype-cell">carduelis carduelis</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741508" class="cat-link">741508</a></td>
+        <td class="songtype-cell">parus major</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741227" class="cat-link">741227</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740815" class="cat-link">740815</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740547" class="cat-link">740547</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740546" class="cat-link">740546</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740185" class="cat-link">740185</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/739292" class="cat-link">739292</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/739166" class="cat-link">739166</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/739017" class="cat-link">739017</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738964" class="cat-link">738964</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/735887" class="cat-link">735887</a></td>
+        <td class="songtype-cell">نداء إنذار، تغريد فرعي، quiet تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/727029" class="cat-link">727029</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/726914" class="cat-link">726914</a></td>
+        <td class="songtype-cell">نداء، تغريد، squalling نداء، warbling تغريد، whistling تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/725881" class="cat-link">725881</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/724328" class="cat-link">724328</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/722336" class="cat-link">722336</a></td>
+        <td class="songtype-cell">تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/713684" class="cat-link">713684</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/708636" class="cat-link">708636</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/701714" class="cat-link">701714</a></td>
+        <td class="songtype-cell">نداء، تغريد، interactions</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/697778" class="cat-link">697778</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/696926" class="cat-link">696926</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/696235" class="cat-link">696235</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692298" class="cat-link">692298</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692282" class="cat-link">692282</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692280" class="cat-link">692280</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692277" class="cat-link">692277</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692275" class="cat-link">692275</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692273" class="cat-link">692273</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/666646" class="cat-link">666646</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665546" class="cat-link">665546</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665545" class="cat-link">665545</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665544" class="cat-link">665544</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665332" class="cat-link">665332</a></td>
+        <td class="songtype-cell">uncertain</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665331" class="cat-link">665331</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665099" class="cat-link">665099</a></td>
+        <td class="songtype-cell">uncertain</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665095" class="cat-link">665095</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664859" class="cat-link">664859</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664855" class="cat-link">664855</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/663620" class="cat-link">663620</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/661401" class="cat-link">661401</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/657090" class="cat-link">657090</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/655186" class="cat-link">655186</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/653507" class="cat-link">653507</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/651785" class="cat-link">651785</a></td>
+        <td class="songtype-cell">نداء، تغريد، female bird تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/651256" class="cat-link">651256</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/650632" class="cat-link">650632</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/648864" class="cat-link">648864</a></td>
+        <td class="songtype-cell">نداء إنذار، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/646472" class="cat-link">646472</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/646353" class="cat-link">646353</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/637262" class="cat-link">637262</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/633492" class="cat-link">633492</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/620917" class="cat-link">620917</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/608758" class="cat-link">608758</a></td>
+        <td class="songtype-cell">نداء، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/608757" class="cat-link">608757</a></td>
+        <td class="songtype-cell">نداء، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/608756" class="cat-link">608756</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/582963" class="cat-link">582963</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/578404" class="cat-link">578404</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/578065" class="cat-link">578065</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/578064" class="cat-link">578064</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/578056" class="cat-link">578056</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/575829" class="cat-link">575829</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/575036" class="cat-link">575036</a></td>
+        <td class="songtype-cell">نداء، raspy نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/573073" class="cat-link">573073</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/573068" class="cat-link">573068</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570741" class="cat-link">570741</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570241" class="cat-link">570241</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570239" class="cat-link">570239</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/566812" class="cat-link">566812</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/565722" class="cat-link">565722</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/565121" class="cat-link">565121</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/564105" class="cat-link">564105</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/562251" class="cat-link">562251</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/561748" class="cat-link">561748</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، &quot;ki-zieeh&quot;</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/561746" class="cat-link">561746</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، &quot;falcon calls&quot;، &quot;ki-ki-ki-، &quot;ki-zieeh&quot;، &quot;squeaky call&quot;</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/561742" class="cat-link">561742</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، نداء طيران، تغريد، &quot;falcon calls&quot;</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/561732" class="cat-link">561732</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560963" class="cat-link">560963</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560962" class="cat-link">560962</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، &quot;ki-zieeh&quot;</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/559246" class="cat-link">559246</a></td>
+        <td class="songtype-cell">نداء استجداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/559187" class="cat-link">559187</a></td>
+        <td class="songtype-cell">نداء، تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/557758" class="cat-link">557758</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/555045" class="cat-link">555045</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/553256" class="cat-link">553256</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/524444" class="cat-link">524444</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/495319" class="cat-link">495319</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/488354" class="cat-link">488354</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/485091" class="cat-link">485091</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/483943" class="cat-link">483943</a></td>
+        <td class="songtype-cell">تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/483394" class="cat-link">483394</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/483079" class="cat-link">483079</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/481234" class="cat-link">481234</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/481107" class="cat-link">481107</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/480781" class="cat-link">480781</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/480298" class="cat-link">480298</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/476518" class="cat-link">476518</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/474937" class="cat-link">474937</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/473373" class="cat-link">473373</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/431312" class="cat-link">431312</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/429096" class="cat-link">429096</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/424367" class="cat-link">424367</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/424364" class="cat-link">424364</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/424248" class="cat-link">424248</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/421690" class="cat-link">421690</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/419741" class="cat-link">419741</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/418642" class="cat-link">418642</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/385164" class="cat-link">385164</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/378846" class="cat-link">378846</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/374871" class="cat-link">374871</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/330717" class="cat-link">330717</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/327282" class="cat-link">327282</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/320026" class="cat-link">320026</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/304383" class="cat-link">304383</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/297793" class="cat-link">297793</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/281700" class="cat-link">281700</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد and نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/281699" class="cat-link">281699</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد and نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/281698" class="cat-link">281698</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد and نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/253004" class="cat-link">253004</a></td>
+        <td class="songtype-cell">تغريد، quieter vocals</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/244231" class="cat-link">244231</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/240866" class="cat-link">240866</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/190712" class="cat-link">190712</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189945" class="cat-link">189945</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189795" class="cat-link">189795</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189794" class="cat-link">189794</a></td>
+        <td class="songtype-cell">نداء، تغريد، school of music for youth</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189793" class="cat-link">189793</a></td>
+        <td class="songtype-cell">نداء، تغريد، school of music for youth</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189786" class="cat-link">189786</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189784" class="cat-link">189784</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/189783" class="cat-link">189783</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/188468" class="cat-link">188468</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/182808" class="cat-link">182808</a></td>
+        <td class="songtype-cell">نداء، تغريد، beak clapping</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/179823" class="cat-link">179823</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/156680" class="cat-link">156680</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/143107" class="cat-link">143107</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/142153" class="cat-link">142153</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/142152" class="cat-link">142152</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/139566" class="cat-link">139566</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/134060" class="cat-link">134060</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/134059" class="cat-link">134059</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/132591" class="cat-link">132591</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/116934" class="cat-link">116934</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/106524" class="cat-link">106524</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/103768" class="cat-link">103768</a></td>
+        <td class="songtype-cell">نداء، إنذار female</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/103767" class="cat-link">103767</a></td>
+        <td class="songtype-cell">نداء، نداء of nestlings</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/102829" class="cat-link">102829</a></td>
+        <td class="songtype-cell">نداء، calls conflict</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/101553" class="cat-link">101553</a></td>
+        <td class="songtype-cell">تغريد، تغريد of male with هدهدة</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/101552" class="cat-link">101552</a></td>
+        <td class="songtype-cell">?</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/67356" class="cat-link">67356</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/30187" class="cat-link">30187</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1034459" class="cat-link">1034459</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1025082" class="cat-link">1025082</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1023779" class="cat-link">1023779</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1023778" class="cat-link">1023778</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1023600" class="cat-link">1023600</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1015592" class="cat-link">1015592</a></td>
+        <td class="songtype-cell">تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1015580" class="cat-link">1015580</a></td>
+        <td class="songtype-cell">تغريد، warbling</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1012092" class="cat-link">1012092</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1012091" class="cat-link">1012091</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1011927" class="cat-link">1011927</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1011646" class="cat-link">1011646</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1011645" class="cat-link">1011645</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1009965" class="cat-link">1009965</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1008943" class="cat-link">1008943</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1007997" class="cat-link">1007997</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1005474" class="cat-link">1005474</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1002403" class="cat-link">1002403</a></td>
+        <td class="songtype-cell">نداء إنذار، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1002006" class="cat-link">1002006</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/1000985" class="cat-link">1000985</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/998313" class="cat-link">998313</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/995554" class="cat-link">995554</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/974759" class="cat-link">974759</a></td>
+        <td class="songtype-cell">display</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/973946" class="cat-link">973946</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/973801" class="cat-link">973801</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/965782" class="cat-link">965782</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/962357" class="cat-link">962357</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/962356" class="cat-link">962356</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/955987" class="cat-link">955987</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/947251" class="cat-link">947251</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/931424" class="cat-link">931424</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/929234" class="cat-link">929234</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/929029" class="cat-link">929029</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/929028" class="cat-link">929028</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/925655" class="cat-link">925655</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/924308" class="cat-link">924308</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/924226" class="cat-link">924226</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/923124" class="cat-link">923124</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/923041" class="cat-link">923041</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/920596" class="cat-link">920596</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/915971" class="cat-link">915971</a></td>
+        <td class="songtype-cell">uncertain</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/913058" class="cat-link">913058</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/912839" class="cat-link">912839</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911669" class="cat-link">911669</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911667" class="cat-link">911667</a></td>
+        <td class="songtype-cell">نداء، تغريد، chasing</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911145" class="cat-link">911145</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911143" class="cat-link">911143</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911142" class="cat-link">911142</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/911139" class="cat-link">911139</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/909468" class="cat-link">909468</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/907137" class="cat-link">907137</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/903171" class="cat-link">903171</a></td>
+        <td class="songtype-cell">نداء، squeaky calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/902896" class="cat-link">902896</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/901038" class="cat-link">901038</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/901037" class="cat-link">901037</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/894511" class="cat-link">894511</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/871702" class="cat-link">871702</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/858211" class="cat-link">858211</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/858103" class="cat-link">858103</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/856542" class="cat-link">856542</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/856540" class="cat-link">856540</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/855865" class="cat-link">855865</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/855063" class="cat-link">855063</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/840444" class="cat-link">840444</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/838422" class="cat-link">838422</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/826958" class="cat-link">826958</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/826846" class="cat-link">826846</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/826606" class="cat-link">826606</a></td>
+        <td class="songtype-cell">نداء، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/826249" class="cat-link">826249</a></td>
+        <td class="songtype-cell">uncertain، Contact calls in familial group (at less 4 birds)</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/825461" class="cat-link">825461</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/823495" class="cat-link">823495</a></td>
+        <td class="songtype-cell">نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/821418" class="cat-link">821418</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/817352" class="cat-link">817352</a></td>
+        <td class="songtype-cell">نداء، contact calls</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/816183" class="cat-link">816183</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/815902" class="cat-link">815902</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/815757" class="cat-link">815757</a></td>
+        <td class="songtype-cell">نداء، تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/815756" class="cat-link">815756</a></td>
+        <td class="songtype-cell">نداء، تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/814159" class="cat-link">814159</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/811773" class="cat-link">811773</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/808028" class="cat-link">808028</a></td>
+        <td class="songtype-cell">نداء، نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/805830" class="cat-link">805830</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/805124" class="cat-link">805124</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/805076" class="cat-link">805076</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/804837" class="cat-link">804837</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/804162" class="cat-link">804162</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/803991" class="cat-link">803991</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802923" class="cat-link">802923</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802920" class="cat-link">802920</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802398" class="cat-link">802398</a></td>
+        <td class="songtype-cell">نداء، Kestrel-like نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802394" class="cat-link">802394</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802385" class="cat-link">802385</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802384" class="cat-link">802384</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/802363" class="cat-link">802363</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/801276" class="cat-link">801276</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/799028" class="cat-link">799028</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/798721" class="cat-link">798721</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/797627" class="cat-link">797627</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/797626" class="cat-link">797626</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/797625" class="cat-link">797625</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/797624" class="cat-link">797624</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/793475" class="cat-link">793475</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/788000" class="cat-link">788000</a></td>
+        <td class="songtype-cell">تغريد فرعي، whistled تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/784513" class="cat-link">784513</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/777833" class="cat-link">777833</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/770422" class="cat-link">770422</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/770419" class="cat-link">770419</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/770417" class="cat-link">770417</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/770416" class="cat-link">770416</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/770415" class="cat-link">770415</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/764875" class="cat-link">764875</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/750840" class="cat-link">750840</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/744298" class="cat-link">744298</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743925" class="cat-link">743925</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743924" class="cat-link">743924</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743918" class="cat-link">743918</a></td>
+        <td class="songtype-cell">تغريد، subsong?</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743582" class="cat-link">743582</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743581" class="cat-link">743581</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743420" class="cat-link">743420</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/743271" class="cat-link">743271</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/742970" class="cat-link">742970</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/742159" class="cat-link">742159</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741650" class="cat-link">741650</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741649" class="cat-link">741649</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/741484" class="cat-link">741484</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740571" class="cat-link">740571</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740568" class="cat-link">740568</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740564" class="cat-link">740564</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740563" class="cat-link">740563</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740280" class="cat-link">740280</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/740247" class="cat-link">740247</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738962" class="cat-link">738962</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738923" class="cat-link">738923</a></td>
+        <td class="songtype-cell">تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738775" class="cat-link">738775</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738692" class="cat-link">738692</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738645" class="cat-link">738645</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738643" class="cat-link">738643</a></td>
+        <td class="songtype-cell">uncertain</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738286" class="cat-link">738286</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738020" class="cat-link">738020</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/738005" class="cat-link">738005</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/737507" class="cat-link">737507</a></td>
+        <td class="songtype-cell">نداء استجداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/736828" class="cat-link">736828</a></td>
+        <td class="songtype-cell">نداء استجداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/736750" class="cat-link">736750</a></td>
+        <td class="songtype-cell">نداء، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/736305" class="cat-link">736305</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/736110" class="cat-link">736110</a></td>
+        <td class="songtype-cell">نداء استجداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/735827" class="cat-link">735827</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/734263" class="cat-link">734263</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/733089" class="cat-link">733089</a></td>
+        <td class="songtype-cell">flight تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/733051" class="cat-link">733051</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/731976" class="cat-link">731976</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/731298" class="cat-link">731298</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/730010" class="cat-link">730010</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/730009" class="cat-link">730009</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/728177" class="cat-link">728177</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/726264" class="cat-link">726264</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/725793" class="cat-link">725793</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/724329" class="cat-link">724329</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/723629" class="cat-link">723629</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/721998" class="cat-link">721998</a></td>
+        <td class="songtype-cell">نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/717274" class="cat-link">717274</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/717273" class="cat-link">717273</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/713674" class="cat-link">713674</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/696817" class="cat-link">696817</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692297" class="cat-link">692297</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/692261" class="cat-link">692261</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/691687" class="cat-link">691687</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/688018" class="cat-link">688018</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/681809" class="cat-link">681809</a></td>
+        <td class="songtype-cell">نداء طيران، nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/676278" class="cat-link">676278</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/675023" class="cat-link">675023</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/675011" class="cat-link">675011</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/675009" class="cat-link">675009</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/673784" class="cat-link">673784</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/672233" class="cat-link">672233</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/672002" class="cat-link">672002</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/670235" class="cat-link">670235</a></td>
+        <td class="songtype-cell">نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/669422" class="cat-link">669422</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/669421" class="cat-link">669421</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/668650" class="cat-link">668650</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/666210" class="cat-link">666210</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665988" class="cat-link">665988</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665489" class="cat-link">665489</a></td>
+        <td class="songtype-cell">نداء استجداء، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/665142" class="cat-link">665142</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664858" class="cat-link">664858</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664857" class="cat-link">664857</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664856" class="cat-link">664856</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/664182" class="cat-link">664182</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/659976" class="cat-link">659976</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/659945" class="cat-link">659945</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/659942" class="cat-link">659942</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/658332" class="cat-link">658332</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/657761" class="cat-link">657761</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/657126" class="cat-link">657126</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/656114" class="cat-link">656114</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/656041" class="cat-link">656041</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/654584" class="cat-link">654584</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/654567" class="cat-link">654567</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/654411" class="cat-link">654411</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/653948" class="cat-link">653948</a></td>
+        <td class="songtype-cell">nocturnal flight نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/653659" class="cat-link">653659</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/651036" class="cat-link">651036</a></td>
+        <td class="songtype-cell">تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/650974" class="cat-link">650974</a></td>
+        <td class="songtype-cell">نداء إنذار، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/647544" class="cat-link">647544</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/647460" class="cat-link">647460</a></td>
+        <td class="songtype-cell">نداء استجداء، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/646675" class="cat-link">646675</a></td>
+        <td class="songtype-cell">نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/646275" class="cat-link">646275</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/646201" class="cat-link">646201</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/645419" class="cat-link">645419</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/644188" class="cat-link">644188</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/636448" class="cat-link">636448</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/633039" class="cat-link">633039</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/623780" class="cat-link">623780</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/623435" class="cat-link">623435</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/600611" class="cat-link">600611</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/587493" class="cat-link">587493</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/587492" class="cat-link">587492</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/582059" class="cat-link">582059</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/581595" class="cat-link">581595</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/581556" class="cat-link">581556</a></td>
+        <td class="songtype-cell">نداء، تغريد ثنائي، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/581302" class="cat-link">581302</a></td>
+        <td class="songtype-cell">تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/581063" class="cat-link">581063</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/580954" class="cat-link">580954</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/580912" class="cat-link">580912</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/579746" class="cat-link">579746</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/579048" class="cat-link">579048</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/578203" class="cat-link">578203</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/577740" class="cat-link">577740</a></td>
+        <td class="songtype-cell">نداء إنذار، نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/574968" class="cat-link">574968</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/574529" class="cat-link">574529</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/573373" class="cat-link">573373</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/573372" class="cat-link">573372</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/571937" class="cat-link">571937</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570100" class="cat-link">570100</a></td>
+        <td class="songtype-cell">نداء، excitement نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570099" class="cat-link">570099</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/570098" class="cat-link">570098</a></td>
+        <td class="songtype-cell">تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/569341" class="cat-link">569341</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/567973" class="cat-link">567973</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/566753" class="cat-link">566753</a></td>
+        <td class="songtype-cell">نداء إنذار، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/564982" class="cat-link">564982</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/564979" class="cat-link">564979</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/562855" class="cat-link">562855</a></td>
+        <td class="songtype-cell">نداء، نداء طيران</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/561564" class="cat-link">561564</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560969" class="cat-link">560969</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560966" class="cat-link">560966</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560965" class="cat-link">560965</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560952" class="cat-link">560952</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/560949" class="cat-link">560949</a></td>
+        <td class="songtype-cell">نداء، نداء طيران، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/558296" class="cat-link">558296</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/556813" class="cat-link">556813</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/554643" class="cat-link">554643</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/554475" class="cat-link">554475</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/554456" class="cat-link">554456</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/540404" class="cat-link">540404</a></td>
+        <td class="songtype-cell">نداء، nocturnal flight نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/509489" class="cat-link">509489</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/496005" class="cat-link">496005</a></td>
+        <td class="songtype-cell">نداء إنذار</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/494009" class="cat-link">494009</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/491969" class="cat-link">491969</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/491808" class="cat-link">491808</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/491805" class="cat-link">491805</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/491016" class="cat-link">491016</a></td>
+        <td class="songtype-cell">نداء استجداء، نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/490377" class="cat-link">490377</a></td>
+        <td class="songtype-cell"></td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/490357" class="cat-link">490357</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/489050" class="cat-link">489050</a></td>
+        <td class="songtype-cell">نداء، تغريد، تغريد فرعي</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/488226" class="cat-link">488226</a></td>
+        <td class="songtype-cell">نداء</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/486457" class="cat-link">486457</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/486442" class="cat-link">486442</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/486268" class="cat-link">486268</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/483953" class="cat-link">483953</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/481644" class="cat-link">481644</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/480954" class="cat-link">480954</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+      <tr>
+        <td class="cat-cell"><a href="https://xeno-canto.org/479440" class="cat-link">479440</a></td>
+        <td class="songtype-cell">نداء، تغريد</td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+<script>
+  function filterTable(q) {
+    q = (q || '').toLowerCase();
+    const rows = document.querySelectorAll('#dataTable tbody tr');
+    let visible = 0;
+    rows.forEach(tr => {
+      const t = tr.innerText.toLowerCase();
+      if (t.indexOf(q) > -1) { tr.style.display = ''; visible++; }
+      else { tr.style.display = 'none'; }
+    });
+    document.getElementById('rowCount').textContent = visible;
+  }
+
+  // Normalize Arabic
+  function normalizeArabic(s) {
+    return s.replace(/[\u064B-\u065F]/g, '').replace(/[أإآا]/g, 'ا');
+  }
+
+  // Step 1: translate known English phrases/words
+  function translateKnownEnglish(text) {
+    const pairs = [
+      [/\bflight call\b/gi, 'نداء طيران'],
+      [/\balarm call\b/gi, 'نداء إنذار'],
+      [/\bbegging call\b/gi, 'نداء استجداء'],
+      [/\bcontact call\b/gi, 'نداء تواصل'],
+      [/\bdisplay call\b/gi, 'نداء استعراض'],
+      [/\bterritorial call\b/gi, 'نداء إقليمي'],
+      [/\bsubsong\b/gi, 'تغريد فرعي'],
+      [/\bduet\b/gi, 'تغريد ثنائي'],
+      [/\bwhistle\b/gi, 'صفير'],
+      [/\bchatter\b/gi, 'ثرثرة'],
+      [/\btrill\b/gi, 'هدهدة'],
+      [/\bchirp\b/gi, 'زقزقة'],
+      [/\bbuzz\b/gi, 'أزيز'],
+      [/\bfalcon calls?\b/gi, 'نداءات الصقر'],
+      [/\braspy\b/gi, 'أجش'],
+      [/\braspy call\b/gi, 'نداء أجش'],
+      [/\bsqueaky call\b/gi, 'نداء صرير'],
+      [/\bsqueaky\b/gi, 'صرير'],
+      [/\bcall\b/gi, 'نداء'],
+      [/\band\b/gi, 'و']
+    ];
+    let out = text;
+    pairs.forEach(([re, ar]) => { out = out.replace(re, ar); });
+    return out;
+  }
+
+  // Step 2: remove any remaining English segments & stray quotes
+  function removeRemainingEnglish(text) {
+    // remove quoted english snippets like "ki-zieh", keep spaces/commas
+    let out = text.replace(/[\u201C\u201D"']([^\u0600-\u06FF]+)[\u201C\u201D"']/g, '');
+    // remove leftover latin words/dashes
+    out = out.replace(/[A-Za-z][A-Za-z\-']+/g, '').replace(/\s{2,}/g, ' ');
+    // tidy punctuation: replace English comma with Arabic
+    out = out.replace(/\s*,\s*/g, '، ');
+    // remove multiple Arabic commas
+    out = out.replace(/(،\s*){2,}/g, '، ');
+    // trim separators at ends
+    out = out.replace(/^(،\s*)+|((\s*،)+)\s*$/g, '').trim();
+    return out;
+  }
+
+  // Step 3: color Arabic keywords
+  function colorArabic(cell) {
+    const MAP = [
+      { cls: 'clr-warn', variants: ['إنذار','انذار'] },
+      { cls: 'clr-sing', variants: ['تغريد'] },
+      { cls: 'clr-call', variants: ['نداء','ندا'] },
+      { cls: 'clr-song', variants: ['تغريد'] },
+    ];
+    const parts = cell.textContent.split(/(\s+|،|,)/);
+    for (let i = 0; i < parts.length; i++) {
+      const token = parts[i];
+      if (!token || /(\s+|،|,)/.test(token)) continue;
+      const norm = normalizeArabic(token.trim());
+      let wrapped = null;
+      for (let j = 0; j < MAP.length; j++) {
+        const item = MAP[j];
+        for (let k = 0; k < item.variants.length; k++) {
+          if (normalizeArabic(item.variants[k]) === norm) {
+            wrapped = '<span class="' + item.cls + '">' + token + '</span>';
+            break;
+          }
+        }
+        if (wrapped) break;
+      }
+      if (wrapped) parts[i] = wrapped;
+    }
+    cell.innerHTML = parts.join('');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.songtype-cell').forEach(cell => {
+      let t = cell.textContent;
+      t = translateKnownEnglish(t);
+      t = removeRemainingEnglish(t);
+      cell.textContent = t;   // set cleaned Arabic text only
+      colorArabic(cell);      // then color words
+    });
+  });
+</script>
+</body>
+</html>
